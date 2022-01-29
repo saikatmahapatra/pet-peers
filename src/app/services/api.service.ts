@@ -6,10 +6,11 @@ import { map, catchError } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class ApiService {
-  private APIBaseURL = 'http://localhost:3000/';
+  private APIBaseURL = 'https://my-json-server.typicode.com/saikatmahapatra/pet-peers/';
   constructor(private http: HttpClient) { }
   
   getPets() {
+    console.log('API Service');
     return this.http.get(this.APIBaseURL + 'pets');
   }
 }
