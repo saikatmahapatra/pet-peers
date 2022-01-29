@@ -16,25 +16,25 @@
     
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
+          <li class="nav-item" *ngIf="!isLoggedIn">
             <a class="nav-link" routerLink="/signup">Sign Up</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" *ngIf="!isLoggedIn">
             <a class="nav-link" routerLink="/login">Login</a>
           </li>
 
-          <li class="nav-item">
+          <li class="nav-item" *ngIf="isLoggedIn">
             <a class="nav-link" routerLink="/add-pet">Add Pet</a>
           </li>
 
-          <li class="nav-item">
+          <li class="nav-item" *ngIf="isLoggedIn">
             <a class="nav-link" routerLink="/products">Buy Pets</a>
           </li>
 
-          <li class="nav-item">
+          <li class="nav-item" *ngIf="isLoggedIn">
             <a class="nav-link" routerLink="/my-orders">My Orders</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" *ngIf="isLoggedIn">
             <a class="nav-link" (click)="logout();">Logout</a>
           </li>
           
