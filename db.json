@@ -1,0 +1,12 @@
+{
+    "pets": [
+        {"id": "1", "name": "American Eskimo Dog", "price": "3400"},
+        {"id": "2", "name": "American Foxhoud", "price": "6799"},
+        {"id": "3", "name": "Doverman", "price": "3500"},
+        {"id": "4", "name": "Golden Retriver", "price": "4000"}
+    ],
+    "users": [
+        {"id": "1", "email": "user@domain.com", "password": "1234"}
+    ]
+    
+}
