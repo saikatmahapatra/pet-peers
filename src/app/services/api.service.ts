@@ -13,4 +13,10 @@ export class ApiService {
     console.log('API Service');
     return this.http.get(this.APIBaseURL + 'pets');
   }
+
+  registerUser(data: any) {
+    console.log('in API SVC', data);
+    return this.http.post(this.APIBaseURL + 'register', data);
+  }
+
 }
