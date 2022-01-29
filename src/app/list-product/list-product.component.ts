@@ -1,15 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-
+import { ApiService } from '../services/api.service';
 @Component({
   selector: 'app-list-product',
   templateUrl: './list-product.component.html',
-  styleUrls: ['./list-product.component.scss']
+  styleUrls: ['./list-product.component.scss'],
+  providers: [ApiService]
 })
 export class ListProductComponent implements OnInit {
 
   pets: any;
 
-  constructor() { }
+  constructor(private apiSvc: ApiService) { }
 
   ngOnInit(): void {
     this.getListOfPets();
